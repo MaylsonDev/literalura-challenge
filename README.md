@@ -50,3 +50,13 @@ A aplicação permite:
 
 ```bash
 git clone https://github.com/seu-usuario/LiterAlura.git
+
+2. Configure o Banco de Dados
+Crie um banco de dados PostgreSQL e configure no arquivo application.properties ou application.yml:
+spring.datasource.url=jdbc:postgresql://localhost:5432/literalura
+spring.datasource.username=seu-usuario
+spring.datasource.password=sua-senha
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.properties.hibernate.format_sql=true
+
+
