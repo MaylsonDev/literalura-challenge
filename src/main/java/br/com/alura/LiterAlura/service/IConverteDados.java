@@ -1,0 +1,11 @@
+package br.com.alura.LiterAlura.service;
+
+import br.com.alura.LiterAlura.model.DadosLivro;
+
+import java.util.List;
+
+public interface IConverteDados {
+    <T> T obterDados(String json,Class<T> classe);
+    <T> List<T> obterLista(String json, Class<T> classe);
+    List<DadosLivro> obterListaDeLivros(String json);
+}
